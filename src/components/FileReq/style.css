@@ -1,0 +1,18 @@
+
+.fileList{
+    display: flex;
+    /* flex-wrap:wrap ; */
+    /* justify-content: center; */
+    flex-direction: row;
+    align-content: center;
+    
+}
+
+.file {
+    background-color: white;
+    /* flex-direction: row; */
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 170px;
+    
+}
