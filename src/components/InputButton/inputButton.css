@@ -1,0 +1,19 @@
+.inputButtonContainer{
+display: flex;
+justify-content: center;
+height: 130px;
+}
+
+.inputWrapper{
+width: 90%;
+justify-content:center;
+
+}
+
+.internalWrapper{
+width:80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}

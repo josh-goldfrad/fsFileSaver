@@ -1,15 +1,16 @@
-import React, { useContext, useEffect } from 'react'
-import { pathContext } from '../Layout'
+import React from 'react'
+
+import "./style.css"
 
 export default function Header() {
-  const [path,setPath]=useContext(pathContext)
-  useEffect(() => {
-    setPath("uploads")
-  }, [])
+
   
-  return (<>
-    <div>Header</div>
-    <div>current folder:{path}</div>
+  
+  return (<><div className='headercontainer'>
+    <div className='header'>
+    <div className='websiteName'>didi drive </div>
+    </div>
+  </div>
   </>
   )
 }

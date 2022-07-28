@@ -1,18 +1,24 @@
 import React, { createContext, useState } from 'react'
 import Main from './Main/Main'
 import Header from './Header/Header'
+import Directory from './Directory/Directory'
 
 
-export const pathContext = createContext()
+export const layoutContext = createContext()
 
 export default function Layout() {
-    const pathState = useState()
+    const [path, setPath] = useState()
+    const dataState = useState()
     return (<>
-        <pathContext.Provider value={pathState}>
+        <layoutContext.Provider value={{
+            path,
+            setPath,
+            // dataState
+        }}>
             <Header />
-            <h2>+++++++++++++++++++++++++++</h2>
+            <Directory />
             <Main />
-        </pathContext.Provider>
+        </layoutContext.Provider>
     </>
     )
 }
